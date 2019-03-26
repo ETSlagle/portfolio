@@ -43,14 +43,9 @@ class Contact extends Component{
                             es641512@ohio.edu
                             </ListItemContent>
                         </ListItem>
-
-
-                        
+  
                     </List>
-
                     </div>
-
-
                     </Cell>
                 </Grid>
             </div>

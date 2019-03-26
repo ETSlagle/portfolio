@@ -7,10 +7,10 @@ import Skills from './skills';
 class Resume extends Component{
     render(){
         return(
-            <div>
+            <div className="resume-background" /*style={{backgroundImage: "url(https://images.pexels.com/photos/988872/pexels-photo-988872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)"}}*/>
                 <Grid>
                     <Cell col ={4}>
-                    <div style={{textAlign: 'center'}}>
+                    <div style={{ textAlign: 'center'}}>
                     <img src="https://media.licdn.com/dms/image/C4D03AQEy6MT0yLHwFg/profile-displayphoto-shrink_200_200/0?e=1556150400&v=beta&t=s-_zy8xABP9jILYCPazpJuulU0OQay9aKn7eWPtTMGc"
                     alt="avatar"
                     style={{height: '400px'}}
@@ -64,20 +64,20 @@ class Resume extends Component{
                             startYear={2017}
                             endYear={2018}
                             jobName="Help Desk Analyst, American Eagle"
-                            jobDescription="This is dummy text to be replaced later"
-                            jobDescription2="This is dummy text to be replaced later"
-                            jobDescription3="This is dummy text to be replaced later"
-                            jobDescription4="This is dummy text to be replaced later"                        
+                            jobDescription="Provided various forms of tech support to American Eagle stores across four countries, including idevice troubleshooting, password/account resets, wifi connectivity assistance, and hardware assembly"
+                            jobDescription2="Coordinated with a group of 20+ colleagues across various platforms to maintain constant communication with the team and accomplish the united goals"
+                            jobDescription3="Learned various skills ranging from increased familiarity with hardware (PC laptops/desktops, idevices etc.) to the use of numerous softwares (Jira ticketing system, airwatch, etc.)"
+                            jobDescription4=""                        
                         />
 
                         <Experience
                             startYear={2011}
                             endYear={2017}
                             jobName="Manager, Wagner's Market"
-                            jobDescription="This is dummy text to be replaced later" 
-                            jobDescription2="This is dummy text to be replaced later"
-                            jobDescription3="This is dummy text to be replaced later"
-                            jobDescription4="This is dummy text to be replaced later"                       
+                            jobDescription="Collaborated with a crew of up to 10 other employees" 
+                            jobDescription2="Managed 3-4 employees during night shifts"
+                            jobDescription3="Provided timely customer service "
+                            jobDescription4=""                       
                         />
                         <hr style={{borderTop: '3px solid #e22947'}}/>
                         <h2>Skills</h2>

@@ -19,8 +19,6 @@ class Projects extends Component{
                     </CardText>
                     <CardActions border>
                         <Button colored>GitHub</Button>
-                        <Button colored>CodePen</Button>
-                        <Button colored>LiveDemo</Button>
                     </CardActions>
                     <CardMenu style={{color: '#fff'}}>
                         <IconButton name="share"/>
@@ -34,16 +32,7 @@ class Projects extends Component{
                 <div><h1>This is Unity</h1></div>
             )
         }   
-        else if(this.state.activeTab === 2){
-            return(
-                <div><h1>This is Other Category</h1></div>
-            )
-        }
-        else if(this.state.activeTab === 3){
-            return(
-                <div><h1>This is Other Category</h1></div>
-            )
-        }      
+      
     }
 
 
@@ -51,12 +40,11 @@ class Projects extends Component{
 
     render(){
         return(
+        <div className="projects-background"/* style={{backgroundImage: "url(https://images.pexels.com/photos/988872/pexels-photo-988872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)"}}*/>
             <div className="category-tabs">
                 <Tabs activeTab={this.state.activeTab} onChange={tabId => this.setState({activeTab: tabId})} ripple>
                     <Tab>React</Tab>
                     <Tab>Unity</Tab>
-                    <Tab>Other Category</Tab>
-                    <Tab>Other Category</Tab>
                  </Tabs> 
 
                  <section className="projects-grid">
@@ -67,6 +55,7 @@ class Projects extends Component{
                     </Grid>
                  </section>
             </div>
+        </div>
         )
     }
 }
